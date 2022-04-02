@@ -139,11 +139,6 @@ footer a:not(.nav-link) {
     text-align: start !important;
   }
 }
-@media screen {
-  .print-only {
-    display: none;
-  }
-}
 @media print {
   [data-aos] {
     opacity: 1 !important;

@@ -3,4 +3,4 @@
 THIS_SCRIPT_DIR=$(cd $(dirname $0);pwd)
 BASE_DIR=$(cd ${THIS_SCRIPT_DIR}/..;pwd)
 
-serve -p 3000 $BASE_DIR
+npx serve -p 3000 $BASE_DIR

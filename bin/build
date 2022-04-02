@@ -5,4 +5,4 @@ BASE_DIR=$(cd ${THIS_SCRIPT_DIR}/..;pwd)
 
 cd $BASE_DIR
 
-sass --no-source-map styles:css
+npx sass --no-source-map styles:css
