@@ -1,0 +1,273 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import About from '../../content/fr/about.md';
+import Skills from '../../content/fr/skills.md';
+import Experience from '../../content/fr/experience.md';
+import Education from '../../content/fr/education.md';
+import Hobbies from '../../content/fr/hobbies.md';
+---
+
+<Layout title="Olivier Penhoat - CV" lang="fr">
+  <!-- Language Switch (Fixed Position) -->
+  <div class="fixed top-4 right-4 z-50 no-print">
+    <a 
+      href="/en/" 
+      class="inline-flex items-center gap-2 bg-bleu-sarcelle-500 hover:bg-bleu-sarcelle-600 text-white px-4 py-2 rounded-lg shadow-lg transition-all duration-200 text-sm font-medium"
+    >
+      <span>🇬🇧</span>
+      <span>English</span>
+    </a>
+  </div>
+
+  <div class="min-h-screen bg-gray-50">
+    <div class="max-w-6xl mx-auto md:flex">
+      
+      <!-- Sidebar Left -->
+      <aside class="w-full md:w-72 md:min-h-screen bg-gradient-to-br from-bleu-sarcelle-500 to-bleu-sarcelle-600 text-white md:sticky md:top-0 md:h-screen md:overflow-y-auto">
+        <div class="p-6 md:p-8">
+          <!-- Profile Photo -->
+          <div class="text-center mb-6">
+            <img 
+              src="/images/profile.jpg" 
+              alt="Olivier Penhoat" 
+              class="w-32 h-32 md:w-40 md:h-40 rounded-lg border-4 border-white shadow-lg object-contain bg-white mx-auto"
+            />
+          </div>
+          
+          <!-- Name & Title -->
+          <div class="text-center mb-6">
+            <h1 class="text-2xl md:text-3xl font-bold mb-2">Olivier Penhoat</h1>
+            <p class="text-sm md:text-base font-light opacity-90">CTO / Directeur Developer eXperience</p>
+          </div>
+          
+          <!-- Social Links -->
+          <div class="flex justify-center gap-4 mb-8 no-print">
+            <a 
+              href="https://github.com/openhoat" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="bg-bleu-sarcelle-500 text-white hover:bg-jaune-moutarde-500 hover:text-white transition-all duration-200 text-xl p-2 rounded-full"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/openhoat" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="bg-bleu-sarcelle-500 text-white hover:bg-jaune-moutarde-500 hover:text-white transition-all duration-200 text-xl p-2 rounded-full"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a 
+              href="https://www.instagram.com/h3adw00d/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="bg-bleu-sarcelle-500 text-white hover:bg-jaune-moutarde-500 hover:text-white transition-all duration-200 text-xl p-2 rounded-full"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          
+          <!-- Navigation -->
+          <nav class="no-print">
+            <ul class="space-y-2">
+              <li>
+                <a href="#about" class="block px-4 py-2 rounded-lg hover:bg-white/20 transition-colors text-sm font-medium">
+                  <i class="fas fa-user mr-2"></i>À propos
+                </a>
+              </li>
+              <li>
+                <a href="#skills" class="block px-4 py-2 rounded-lg hover:bg-white/20 transition-colors text-sm font-medium">
+                  <i class="fas fa-code mr-2"></i>Compétences
+                </a>
+              </li>
+              <li>
+                <a href="#experience" class="block px-4 py-2 rounded-lg hover:bg-white/20 transition-colors text-sm font-medium">
+                  <i class="fas fa-briefcase mr-2"></i>Expériences
+                </a>
+              </li>
+              <li>
+                <a href="#education" class="block px-4 py-2 rounded-lg hover:bg-white/20 transition-colors text-sm font-medium">
+                  <i class="fas fa-graduation-cap mr-2"></i>Formation
+                </a>
+              </li>
+              <li>
+                <a href="#hobbies" class="block px-4 py-2 rounded-lg hover:bg-white/20 transition-colors text-sm font-medium">
+                  <i class="fas fa-heart mr-2"></i>Loisirs
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="block px-4 py-2 rounded-lg hover:bg-white/20 transition-colors text-sm font-medium">
+                  <i class="fas fa-envelope mr-2"></i>Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          
+          <!-- PDF Download Button -->
+          <div class="mt-6 no-print">
+            <a 
+              href="/pdf/cv-olivier-penhoat-fr.pdf" 
+              download
+              class="flex items-center justify-center gap-2 bg-jaune-moutarde-500 hover:bg-jaune-moutarde-600 text-white px-4 py-3 rounded-lg shadow-lg transition-all duration-200 font-medium text-sm w-full"
+            >
+              <i class="fas fa-download"></i>
+              <span>PDF</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content Right -->
+      <main class="flex-1 bg-white">
+        <div class="p-6 md:p-12">
+          
+          <!-- About Section -->
+          <section id="about" class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2 pb-2 border-b-2 border-bleu-sarcelle-500">
+              <i class="fas fa-user text-jaune-moutarde-600"></i>
+              À propos
+            </h2>
+            <div class="prose prose-base max-w-none text-gray-700">
+              <About />
+            </div>
+          </section>
+
+          <!-- Skills Section -->
+          <section id="skills" class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2 pb-2 border-b-2 border-bleu-sarcelle-500">
+              <i class="fas fa-code text-jaune-moutarde-600"></i>
+              Compétences
+            </h2>
+            <div class="prose prose-base max-w-none text-gray-700">
+              <Skills />
+            </div>
+          </section>
+
+          <!-- Experience Section with Timeline -->
+          <section id="experience" class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2 pb-2 border-b-2 border-bleu-sarcelle-500">
+              <i class="fas fa-briefcase text-jaune-moutarde-600"></i>
+              Expériences
+            </h2>
+            <div class="time-line-container mb-10">
+              <Experience />
+            </div>
+          </section>
+
+          <!-- Education Section with Timeline -->
+          <section id="education" class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2 pb-2 border-b-2 border-bleu-sarcelle-500">
+              <i class="fas fa-graduation-cap text-jaune-moutarde-600"></i>
+              Formation
+            </h2>
+            <div class="time-line-container mb-10">
+              <Education />
+            </div>
+          </section>
+
+          <!-- Hobbies Section -->
+          <section id="hobbies" class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2 pb-2 border-b-2 border-bleu-sarcelle-500">
+              <i class="fas fa-heart text-jaune-moutarde-600"></i>
+              Loisirs
+            </h2>
+            <div class="prose prose-base max-w-none text-gray-700">
+              <Hobbies />
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section id="contact" class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2 pb-2 border-b-2 border-bleu-sarcelle-500">
+              <i class="fas fa-envelope text-jaune-moutarde-600"></i>
+              Contact
+            </h2>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <i class="far fa-envelope text-bleu-sarcelle-500 text-xl w-8"></i>
+                <a 
+                  href="mailto:openhoat@gmail.com" 
+                  class="text-gray-800 hover:text-bleu-sarcelle-500 hover:text-jaune-moutarde-600 transition-colors"
+                >
+                  openhoat@gmail.com
+                </a>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fas fa-map-marker-alt text-bleu-sarcelle-500 text-xl w-8"></i>
+                <span class="text-gray-700">Boulogne-Billancourt, France</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <footer class="text-center text-gray-500 text-sm pt-6 border-t border-gray-200">
+            <p>© 2026 Olivier Penhoat</p>
+          </footer>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+</Layout>
+
+<style>
+  :global(.prose h2) {
+    @apply text-lg font-bold text-gray-800 mt-4 mb-2;
+  }
+  
+  :global(.prose h3) {
+    @apply text-base font-semibold text-gray-800 mt-3 mb-2;
+  }
+  
+  :global(.prose p) {
+    @apply text-gray-700 leading-relaxed mb-2;
+  }
+  
+  :global(.prose ul) {
+    @apply text-gray-700 my-2;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  :global(.prose ul li) {
+    @apply mb-1;
+  }
+  
+  :global(.prose strong) {
+    @apply font-semibold text-gray-900;
+  }
+  
+  :global(.prose a) {
+    @apply text-bleu-sarcelle-500 hover:text-jaune-moutarde-600 underline;
+  }
+  
+  :global(.prose hr) {
+    @apply my-4 border-t border-gray-200;
+  }
+
+  /* Timeline custom classes from Astrofy template */
+  :global(.bg-primary) {
+    background-color: #DBB32D;
+  }
+
+  :global(.bd-grid) {
+    display: grid;
+  }
+
+  :global(.education__time) {
+    min-width: 2rem;
+  }
+
+  :global(.education__line) {
+    display: block;
+    height: 100%;
+    width: 2px;
+    transform: translateX(7px);
+  }
+
+  :global(.experience__data) {
+    display: grid;
+  }
+</style>
