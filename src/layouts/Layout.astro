@@ -40,8 +40,270 @@ const {
   }
 
   @media print {
+    /* Force print colors and backgrounds */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+
+    /* Page setup */
+    @page {
+      size: A4;
+      margin: 1.5cm 1cm;
+    }
+
+    body {
+      font-size: 11pt;
+      line-height: 1.4;
+      background: white !important;
+    }
+
+    /* Hide non-essential elements */
     .no-print {
       display: none !important;
+    }
+
+    /* Layout adjustments for print - single column */
+    .min-h-screen {
+      min-height: auto !important;
+    }
+
+    .max-w-6xl {
+      max-width: 100% !important;
+    }
+
+    /* Sidebar styling for print */
+    aside {
+      width: 100% !important;
+      min-height: auto !important;
+      position: relative !important;
+      sticky: unset !important;
+      height: auto !important;
+      overflow: visible !important;
+      background: linear-gradient(to right, #014A38, #013227) !important;
+      padding: 1.5rem !important;
+      margin-bottom: 1rem !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    /* Main content adjustments */
+    main {
+      width: 100% !important;
+      flex: none !important;
+      background: white !important;
+    }
+
+    main > div {
+      padding: 0 !important;
+    }
+
+    /* Profile image adjustments */
+    aside img {
+      width: 80px !important;
+      height: 80px !important;
+      border-radius: 8px !important;
+    }
+
+    /* Name and title */
+    aside h1 {
+      font-size: 18pt !important;
+      margin-bottom: 0.25rem !important;
+    }
+
+    aside p {
+      font-size: 10pt !important;
+    }
+
+    /* Social links - show as text */
+    aside .flex.justify-center.gap-4 {
+      display: none !important;
+    }
+
+    /* Navigation - hide */
+    aside nav {
+      display: none !important;
+    }
+
+    /* PDF download button - hide */
+    aside .mt-6.no-print {
+      display: none !important;
+    }
+
+    /* Section styling */
+    section {
+      margin-bottom: 1.5rem !important;
+      page-break-inside: avoid;
+    }
+
+    section h2 {
+      font-size: 14pt !important;
+      margin-bottom: 0.5rem !important;
+      padding-bottom: 0.25rem !important;
+      border-bottom-width: 2px !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    /* Timeline adjustments */
+    .time-line-container {
+      margin-bottom: 1rem !important;
+    }
+
+    .bg-primary {
+      background-color: #DBB32D !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    /* Experience entries */
+    .experience__data {
+      padding-left: 1rem !important;
+      padding-right: 0.5rem !important;
+    }
+
+    .experience__data h3 {
+      font-size: 12pt !important;
+      margin-bottom: 0.25rem !important;
+    }
+
+    .experience__data span {
+      font-size: 9pt !important;
+    }
+
+    .experience__data p {
+      font-size: 10pt !important;
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.75rem !important;
+      text-align: left !important;
+    }
+
+    /* Education timeline */
+    .education__time {
+      min-width: 1.5rem !important;
+    }
+
+    /* Section breaks */
+    section {
+      page-break-inside: avoid;
+    }
+
+    /* Prevent orphans and widows */
+    h2, h3, h4 {
+      page-break-after: avoid;
+    }
+
+    p {
+      orphans: 3;
+      widows: 3;
+    }
+
+    /* Links styling for print */
+    a {
+      text-decoration: none !important;
+      color: inherit !important;
+    }
+
+    a[href]::after {
+      content: none !important;
+    }
+
+    /* Contact section */
+    #contact .flex.items-center {
+      margin-bottom: 0.5rem !important;
+    }
+
+    /* Footer */
+    footer {
+      page-break-before: avoid !important;
+      margin-top: 1rem !important;
+      padding-top: 0.5rem !important;
+    }
+
+    /* Color classes for print */
+    .text-bleu-sarcelle-500,
+    .text-bleu-sarcelle-600 {
+      color: #014A38 !important;
+    }
+
+    .text-jaune-moutarde-600,
+    .text-jaune-moutarde-500 {
+      color: #C99E14 !important;
+    }
+
+    .border-bleu-sarcelle-500 {
+      border-color: #014A38 !important;
+    }
+
+    .bg-bleu-sarcelle-500,
+    .bg-bleu-sarcelle-600 {
+      background-color: #014A38 !important;
+    }
+
+    /* Historical experiences section */
+    .mt-10.mb-10 h2 {
+      font-size: 12pt !important;
+    }
+
+    .mt-10.mb-10 p {
+      font-size: 10pt !important;
+      margin-bottom: 0.25rem !important;
+    }
+
+    /* Markdown prose adjustments */
+    .prose {
+      font-size: 10pt !important;
+    }
+
+    .prose h2 {
+      font-size: 12pt !important;
+    }
+
+    .prose h3 {
+      font-size: 11pt !important;
+    }
+
+    .prose ul {
+      margin-left: 1.25rem !important;
+    }
+
+    /* Ensure background colors print */
+    .bg-gradient-to-br {
+      background: #014A38 !important;
+    }
+
+    /* Contact icons */
+    #contact i {
+      color: #014A38 !important;
+    }
+
+    /* Skills section - force 2 columns for print */
+    .grid {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 1.5rem !important;
+    }
+
+    /* Ensure grid children don't break incorrectly */
+    .grid > div {
+      page-break-inside: avoid;
+    }
+
+    /* Skills lists styling */
+    .grid h3 {
+      font-size: 11pt !important;
+      margin-bottom: 0.5rem !important;
+    }
+
+    .grid ul {
+      margin-left: 0.5rem !important;
+      padding-left: 1rem !important;
+    }
+
+    .grid ul li {
+      font-size: 10pt !important;
+      margin-bottom: 0.25rem !important;
     }
   }
 </style>
