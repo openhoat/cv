@@ -27,9 +27,10 @@ title: Achievements
 <div>
 
 ### 🚀 <a href="https://github.com/openhoat" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-bleu-sarcelle-500 transition-colors">GitHub Projects</a>
-- **CV (This project)** : Modern and responsive CV developed with Astro and Tailwind CSS, available in French and English
-- **Portfolio** : Personal projects and technical demonstrations
-- **Tools & Libraries** : Reusable utilities and components
+- **<a href="https://github.com/openhoat/mesame" target="_blank" rel="noopener noreferrer" class="text-bleu-sarcelle-500 hover:text-jaune-moutarde-600 font-medium transition-colors">Mesame</a>**: Personal style proxy — a local meta-agent that transforms any LLM into your digital twin
+- **<a href="https://github.com/openhoat/termaid" target="_blank" rel="noopener noreferrer" class="text-bleu-sarcelle-500 hover:text-jaune-moutarde-600 font-medium transition-colors">Termaid</a>**: AI-Powered Terminal — Electron app combining a terminal with an LLM assistant (Ollama, Claude)
+- **<a href="https://github.com/openhoat/ai-usage-monitor-gnome-extension" target="_blank" rel="noopener noreferrer" class="text-bleu-sarcelle-500 hover:text-jaune-moutarde-600 font-medium transition-colors">AI Usage Monitor</a>**: GNOME Shell extension to monitor AI subscription usage (Claude, OpenAI, Ollama)
+- **CV (This project)**: Modern and responsive CV developed with Astro and Tailwind CSS
 
 ### 📚 Technologies Used
 - **Frontend** : Astro, React, VueJS, Nuxt, TypeScript

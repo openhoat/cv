@@ -9,19 +9,20 @@ title: Skills
 <div>
 
 ### 🏆 Expert
-- NodeJS
+- NodeJS / Deno
 - JavaScript / TypeScript
 - Jest
 - ReactJS
 - Cline / Ollama
 
 ### 🚀 Advanced
+- Claude Code
 - Docker
 - Redis
 - Shell
 - REST
 - GraphQL
-- Svelte
+- VueJS / Nuxt
 - Markdown
 - CI Pipelines (GitLab, GitHub, Azure) 
 
@@ -31,14 +32,15 @@ title: Skills
 
 ### ✅ Comfortable
 - MongoDB
-- AngularJS
 - Neural networks / Machine Learning
 - Scrum, Kanban
 - AWS, Google Cloud, Azure DevOps, Digital Ocean
-- K8s
 
 ### 🌱 Familiar
-- VueJS / Nuxt
+- Java EE
+- Svelte
+- Angular
+- K8s
 - CSS 3
 - Python, Go
 

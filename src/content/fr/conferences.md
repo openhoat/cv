@@ -27,9 +27,10 @@ title: Conférences et réalisations
 <div>
 
 ### 🚀 <a href="https://github.com/openhoat" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-bleu-sarcelle-500 transition-colors">Projets GitHub</a>
-- **CV (Ce projet)** : CV moderne et responsive développé avec Astro et Tailwind CSS, disponible en français et anglais
-- **Portfolio** : Projets personnels et démonstrations techniques
-- **Outils & Librairies** : Utilitaires et composants réutilisables
+- **<a href="https://github.com/openhoat/mesame" target="_blank" rel="noopener noreferrer" class="text-bleu-sarcelle-500 hover:text-jaune-moutarde-600 font-medium transition-colors">Mesame</a>** : Proxy de style personnel — un méta-agent local qui transforme n'importe quel LLM en votre jumeau numérique
+- **<a href="https://github.com/openhoat/termaid" target="_blank" rel="noopener noreferrer" class="text-bleu-sarcelle-500 hover:text-jaune-moutarde-600 font-medium transition-colors">Termaid</a>** : Terminal boosté à l'IA — Application Electron combinant un terminal avec un assistant LLM (Ollama, Claude)
+- **<a href="https://github.com/openhoat/ai-usage-monitor-gnome-extension" target="_blank" rel="noopener noreferrer" class="text-bleu-sarcelle-500 hover:text-jaune-moutarde-600 font-medium transition-colors">AI Usage Monitor</a>** : Extension GNOME Shell pour surveiller la consommation des abonnements IA (Claude, OpenAI, Ollama)
+- **CV (Ce projet)** : CV moderne et responsive développé avec Astro et Tailwind CSS
 
 ### 📚 Technologies utilisées
 - **Frontend** : Astro, React, VueJS, Nuxt, TypeScript

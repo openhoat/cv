@@ -9,19 +9,20 @@ title: Compétences
 <div>
 
 ### 🏆 Expert
-- NodeJS
+- NodeJS / Deno
 - JavaScript / TypeScript
 - Jest
 - ReactJS
 - Cline / Ollama
 
 ### 🚀 Maîtrise
+- Claude Code
 - Docker
 - Redis
 - Shell
 - REST
 - GraphQL
-- Svelte
+- VueJS / Nuxt
 - Markdown
 - Pipelines CI (GitLab, GitHub, Azure)
 
@@ -31,14 +32,15 @@ title: Compétences
 
 ### ✅ À l'aise
 - MongoDB
-- AngularJS
 - Réseaux de neurones / Machine Learning
 - Scrum, Kanban
 - AWS, Google Cloud, Azure DevOps, Digital Ocean
-- K8s
 
 ### 🌱 Familier
-- VueJS / Nuxt
+- Java EE
+- Svelte
+- Angular
+- K8s
 - CSS 3
 - Python, Go
 
